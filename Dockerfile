@@ -2,6 +2,7 @@ FROM alaindomissy/docker-miniconda
 MAINTAINER Alain Domissy alaindomissy@gmail.com
 
 # TODO check https://github.com/biopython/biopython_docker/blob/master/biopython/Dockerfile
+# TODO check http://fe.popgen.net/posts/2014/03/a-docker-container-for-biopython.html
 
 # NEEDED in ubuntu docker container (indeed!)
 # fix ther errors trying to import pyplot
