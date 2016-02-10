@@ -42,7 +42,7 @@ MAINTAINER Alain Domissy alaindomissy@gmail.com
 RUN apt-get install -y \
   libgomp1 \
   ncbi-blast+ \
-  bedtools \
+  bedtools && \
   conda install -y -c https://conda.anaconda.org/bioconda blast && \
   conda install -y -c https://conda.anaconda.org/bioconda pybedtools==0.7.4 && \
   conda install -y biopython==1.66
