@@ -1,4 +1,4 @@
-FROM alaindomissy/docker-miniconda
+FROM alaindomissy/docker-miniconda2
 MAINTAINER Alain Domissy alaindomissy@gmail.com
 
 # TODO check https://github.com/biopython/biopython_docker/blob/master/biopython/Dockerfile
