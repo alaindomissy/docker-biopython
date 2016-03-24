@@ -42,8 +42,9 @@ MAINTAINER Alain Domissy alaindomissy@gmail.com
 #    $export BLASTDB=”$HOME/ncbi-blast-2.2.29+/db”
 
 # ubunutu bio cli tools
-# gcc is needed for primer3-py 
-RUN apt-get install -y \
+# gcc is needed for primer3-py
+RUN apt-get update &&
+  apt-get install -y \
   libgomp1 \
   ncbi-blast+ \
   bedtools \
