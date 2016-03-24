@@ -43,12 +43,14 @@ MAINTAINER Alain Domissy alaindomissy@gmail.com
 
 # ubunutu bio cli tools
 # gcc is needed for primer3-py
+## libz-dev is needed to pip install pysam, a requirement for pycrispr setup.py
 RUN apt-get update && \
   apt-get install -y \
   libgomp1 \
   ncbi-blast+ \
   bedtools \
-  gcc && \
+  gcc \
+  libz-dev && \
   conda install -y -c https://conda.anaconda.org/bioconda blast && \
   conda install -y -c https://conda.anaconda.org/bioconda pybedtools==0.7.4 && \
   conda install -y biopython==1.66 && \
