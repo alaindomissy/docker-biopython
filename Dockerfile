@@ -43,7 +43,7 @@ MAINTAINER Alain Domissy alaindomissy@gmail.com
 
 # ubunutu bio cli tools
 # gcc is needed for primer3-py
-RUN apt-get update &&
+RUN apt-get update && \
   apt-get install -y \
   libgomp1 \
   ncbi-blast+ \
