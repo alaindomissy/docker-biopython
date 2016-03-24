@@ -51,7 +51,7 @@ RUN apt-get update && \
   gcc && \
   conda install -y -c https://conda.anaconda.org/bioconda blast && \
   conda install -y -c https://conda.anaconda.org/bioconda pybedtools==0.7.4 && \
-  conda install -y biopython==1.66
+  conda install -y biopython==1.66 && \
   pip install -i https://pypi.anaconda.org/pypi/simple primer3-py
 
 
