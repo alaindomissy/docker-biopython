@@ -42,13 +42,17 @@ MAINTAINER Alain Domissy alaindomissy@gmail.com
 #    $export BLASTDB=”$HOME/ncbi-blast-2.2.29+/db”
 
 # ubunutu bio cli tools
+# gcc is needed for primer3-py 
 RUN apt-get install -y \
   libgomp1 \
   ncbi-blast+ \
-  bedtools && \
+  bedtools \
+  gcc && \
   conda install -y -c https://conda.anaconda.org/bioconda blast && \
   conda install -y -c https://conda.anaconda.org/bioconda pybedtools==0.7.4 && \
   conda install -y biopython==1.66
+  pip install -i https://pypi.anaconda.org/pypi/simple primer3-py
+
 
 ENV PATH /opt/blast/bin:$PATH
 
